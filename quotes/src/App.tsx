@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { WeatherForecast } from './components/WeatherForecast';
+import { QuotesDisplay } from './components/QuotesDisplay';
 
 function App() {
   return (
     <div className="App">
-<WeatherForecast />
+   <QuotesDisplay />
     </div>
   );
 }
