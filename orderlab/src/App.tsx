@@ -1,15 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Header }
-import { MenuList } from './components/MenuList';
+import { Header } from "./components/Header";
 import { Sidebar } from './components/Sidebar';
+import OrderContextProvider from './context/OrderContextProvider';
+import { MenuList } from './components/MenuList';
+
+
 function App() {
   return (
     <div className="App">
+      <OrderContextProvider>
       <Header />
       <MenuList />
-      <Sidebar />
+        <Sidebar />
+        </OrderContextProvider>
     </div>
   );
 }

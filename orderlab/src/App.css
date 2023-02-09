@@ -1,3 +1,27 @@
-background{
-  background-color: blue;
+.App{
+  background-color: rgb(193, 193, 229);
+  margin-left:10px,15px;
+  padding-left: 15px;
+  
+}
+.header{
+  display:flex;
+  justify:right;
+}
+
+.Sidebar{
+  display:flex;
+  justify-content: right;
+  flex-direction: column;
+  justify-content: top;
+  margin:20px;
+}
+
+button{
+  border:6px solid white;
+  border-radius: 10%;
+
+}
+.total{
+  margin-left: 10px;
 }
