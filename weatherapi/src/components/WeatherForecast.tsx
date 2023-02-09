@@ -8,15 +8,16 @@ export function WeatherForecast() {
     //useEffect hook-BLANK ARRAY TO RUN ONCE BLANK ARRAY AS SECOND ARGUMENT
     //LIFECYCLE MOUNTS (STEP1) NOW HOOKS--
     useEffect(() => {
-        //calls the api
+        //calls the api runs once when page first loads
         GetWeatherData().then(data => setWeather(data));
-
     }, []);
-//dependency
+//dependency /choose how often it will render. [weather]
     useEffect(() => {
         console.log(weather);
+        //example to debugging
+    }, [weather]);
+
     
-    }, [weather])
     //? nullable  display Periods displayed later in return
     let periods = weather?.properties.periods;
     let displayPeriods = periods?.map((period) =>
