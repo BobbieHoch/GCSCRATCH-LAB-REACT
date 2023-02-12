@@ -4,24 +4,46 @@
   padding-left: 15px;
   
 }
-.header{
-  display:flex;
-  justify:right;
+.Header{
+ text-align:center;
+ font-size: 12px;;
+ position:;
+ 
 }
 
-.Sidebar{
-  display:flex;
-  justify-content: right;
-  flex-direction: column;
-  justify-content: top;
+/* .Sidebar{
   margin:20px;
+  font-size: 18px;
+  text-align: end;
+  justify-content:start;
+  line-height: 100px;  */
+/* } */
+.Sidebar{
+  margin:20px;
+  font-size: 18px;
+  position:fixed;
+  right: 0;
+  top: 0;
+
+}
+.Sidebar li{
+  height: 50px;
 }
 
 button{
-  border:6px solid white;
-  border-radius: 10%;
-
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+  margin: 5px;
 }
 .total{
   margin-left: 10px;
+  height: 30px;
+}
+.Header p{
+  font-size: 18px;;
 }

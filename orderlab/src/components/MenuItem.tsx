@@ -10,6 +10,9 @@ export function MenuItem(props:IMenuItemProps) {
   //destructure
      let { item } = props;
 
+
+     //used to 
+    
     const { addItem, removeItem } = useContext(OrderContext);
 
     function displayBoolean(value: boolean) {
@@ -19,10 +22,11 @@ export function MenuItem(props:IMenuItemProps) {
         <div className="MenuItem">
         <h3>{item.name}</h3>
         <ul>
-            <li>Price: {item.price}</li>
-            <li>Description: {item.description}</li>
-            <li>Calories: {item.calories}</li>
-            <li>Vegetarian?: {displayBoolean(item.vegetarian)}</li>
+           
+                 <li>Description: {item.description}</li>
+                 <li>Calories: {item.calories}</li>
+                <li>Vegetarian?: {displayBoolean(item.vegetarian)}</li>
+                <li>Price: {item.price}</li>
         </ul>
         <button onClick={() => addItem(item)}>Add</button>
         <button onClick={() => removeItem(item.id)}>Remove</button>

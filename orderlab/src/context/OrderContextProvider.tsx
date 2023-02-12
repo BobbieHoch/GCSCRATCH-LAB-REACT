@@ -5,6 +5,7 @@ import OrderContext from "./OrderContext";
 interface IOrderContaxtProviderProps{
     children:ReactNode
 }
+//STATE FUNCTIONS DATA TO SHARE CHILDREN OPENS DOOR TO ALL IN APP.TSX
 
 const OrderContextProvider = ({children}: IOrderContaxtProviderProps) => {
     const [order, setOrder] = useState<Item[]>([]);
