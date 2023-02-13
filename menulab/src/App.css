@@ -1,27 +1,31 @@
-.App {
+/* .App {
     font-family: Arial, sans-serif;
-}
+    background-color: maroon;
+    
+} */
 
-.header {
-    background-color: #333;
+/* .header {
+    background-color: maroon;
     color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-}
+} */
 
-.header h1 {
+/* .header h1 {
     color: #fff;
     text-decoration: none;
-}
+    background-color: grey;
+} */
 
-.menu-route {
+/* .menu-route {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+    color: blue;
+} */
 
-.basic-item {
+/* .basic-item {
     background-color: #eee;
     border: 1px solid #333;
     box-shadow: 2px 2px #333;
@@ -31,20 +35,25 @@
     margin: 20px;
     padding: 20px;
     width: 300px;
-}
+} */
 
-.basic-item h2 {
+/* .basic-item h2 {
     margin: 0;
-}
+    height:10%;
+    color:gree;
+} */
 
-.details-route {
+/* .details-route {
     display: flex;
     justify-content: center;
-}
+    height:30%;
+} */
 
-.details-route ul {
+/* .details-route ul {
     margin: 0;
-}
+    height:20%;
+    color:red;
+} */
 
 /* .search-route form {
     display: flex;

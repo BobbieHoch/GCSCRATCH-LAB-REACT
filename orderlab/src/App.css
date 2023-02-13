@@ -1,49 +1,52 @@
-.App{
-  background-color: rgb(193, 193, 229);
-  margin-left:10px,15px;
-  padding-left: 15px;
+.App {
+    background-color: rgb(193, 193, 229);
+
+    /* padding-left: 15px; */
+}
+.Header {
+    position: fixed;
+    margin-left: 950px;
+}
+.Header p {
+    position: fixed;
+    margin-left: 10px;
+}
+
+.MenuItem {
+    border: 8px solid rgb(2, 75, 22);
+    border-radius: 4px;
+    width: 45%;
+    margin:75px 40px 40px 40px;
+    padding-left: 5px;
   
 }
-.Header{
- text-align:center;
- font-size: 12px;;
- position:;
- 
+
+.Sidebar {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    height: 25%;
+    width: 25%;
+    font-size: larger;
+    font-weight: bold;
 }
 
-/* .Sidebar{
-  margin:20px;
-  font-size: 18px;
-  text-align: end;
-  justify-content:start;
-  line-height: 100px;  */
-/* } */
-.Sidebar{
-  margin:20px;
-  font-size: 18px;
-  position:fixed;
-  right: 0;
-  top: 0;
-
-}
-.Sidebar li{
-  height: 50px;
+.total {
+    margin-left: 10px;
+    height: 30px;
 }
 
-button{
-  background-color: black;
-  color: white;
-  font-size: 12px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-  margin: 5px;
+button {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    margin: 5px;
 }
-.total{
-  margin-left: 10px;
-  height: 30px;
-}
-.Header p{
-  font-size: 18px;;
+.Header p {
+    font-size: 22px;
+    font-weight: bold;
 }
