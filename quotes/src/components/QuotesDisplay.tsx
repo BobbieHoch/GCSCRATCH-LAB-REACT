@@ -7,7 +7,6 @@ export function QuotesDisplay() {
     const [quotes, setQuotes] = useState<QuotesArray[]>();
     useEffect(() => {
         GetQuotesData().then(data => setQuotes(data));
-
     }, []);
 
  

@@ -5,13 +5,19 @@ import { GetWeatherData } from "../services/WeatherService";
 
 export function WeatherForecast() {
     const [weather, setWeather] = useState<Weather>();
+
     //useEffect hook-BLANK ARRAY TO RUN ONCE BLANK ARRAY AS SECOND ARGUMENT
     //LIFECYCLE MOUNTS (STEP1) NOW HOOKS--
+
     useEffect(() => {
+
         //calls the api runs once when page first loads
+
         GetWeatherData().then(data => setWeather(data));
     }, []);
+
 //dependency /choose how often it will render. [weather]
+    
     useEffect(() => {
         console.log(weather);
         //example to debugging
@@ -23,10 +29,10 @@ export function WeatherForecast() {
     let displayPeriods = periods?.map((period) =>
         <ul>
             {/* <li img src= period.icon}</li> */}
-            <li>{period.name}</li>
+            <li className="day">{period.name}</li>
+            <li className="temp">{period.temperature}{period.temperatureUnit}</li>
+            <li className="forecast">{period.detailedForecast}</li>
             <li>{period.icon}</li>
-            <li>{period.detailedForecast}</li>
-            <li>{period.temperature}{period.temperatureUnit}</li>
         </ul>
         
     );

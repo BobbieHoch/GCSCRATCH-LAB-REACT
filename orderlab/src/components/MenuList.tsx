@@ -6,7 +6,7 @@ import { MenuItem } from "./MenuItem";
 
 //Container component
 export function MenuList() {
-    const [menuList, setMenuList] = useState<Item[]>(menuData);
+    const [menuList, setmenuList] = useState<Item[]>(menuData);
    
       
     return (
